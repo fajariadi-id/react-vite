@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn {
+      @apply bg-none text-[32px] px-[12px] outline-none border-2 border-solid border-transparent text-[#704cb6] pb-[4px] cursor-pointer bg-[#704cb61a] rounded-sm transition-all duration-150 hover:border-[#704cb666] focus:border-[#704cb666] active:focus:border-[#704cb633];
+    }
+    .btn-after {
+      @apply bg-[#704cb6] block absolute w-full h-full top-0 left-0 opacity-0 transition-all duration-1000 ease-linear active:w-0 active:opacity-100 active:duration-0;
+    }
+  }
